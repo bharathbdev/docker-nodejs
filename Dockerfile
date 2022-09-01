@@ -13,7 +13,7 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY ../docker-nodejs .
+COPY . .
 
 EXPOSE 3000
 CMD [ "node", "index.js" ]
